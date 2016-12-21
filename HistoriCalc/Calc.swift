@@ -14,6 +14,7 @@ class Calc {
     var ope:String
     var clr:String
     var dot:Int
+    var ans_flag:Bool //直前に"="が押されたかどうかの判定用
     
     init() {
         self.num = 0
@@ -21,9 +22,20 @@ class Calc {
         self.ope = ""
         self.clr = ""
         self.dot = 0
+        self.ans_flag = false
     }
     
     func makeNum(num:Double) {
+        
+        //直前に"="が押されていたら"AC"の処理を行う
+        if ans_flag == true {
+            self.num = 0
+            self.dot = 0
+            self.ans = 0
+            self.ope = ""
+            self.ans_flag = false
+        }
+        
         //dotが入力されたら計算を切り替える
         if dot == 0 {
             self.num = self.num * 10 + num
@@ -41,6 +53,7 @@ class Calc {
         }
         self.num = 0
         self.dot = 0
+        self.ans_flag = false
     }
     
     //前回までのansに対して四則演算を実施する
@@ -50,20 +63,27 @@ class Calc {
             self.ans += self.num
             self.num = 0
             self.dot = 0
+            self.ans_flag = true
         case "-":
             self.ans -= self.num
             self.num = 0
             self.dot = 0
+            self.ans_flag = true
         case "×":
             self.ans *= self.num
             self.num = 0
             self.dot = 0
+            self.ans_flag = true
         case "÷":
             self.ans /= self.num
             self.num = 0
             self.dot = 0
+            self.ans_flag = true
         default:
             self.ans = self.num
+            self.num = 0
+            self.dot = 0
+            self.ans_flag = true
         }
     }
     
@@ -85,6 +105,7 @@ class Calc {
             self.dot = 0
             self.ans = 0
             self.ope = ""
+            self.ans_flag = false
         default:
             print("clr_error")
         }
