@@ -46,8 +46,14 @@ class Calc {
     }
     
     func makeOpe(ope:String) {
+        //1つ目の数字が入力された場合は、ansにnumを格納
+        if self.ans == 0 {
+            self.ans = self.num
+        }else{
+        //それ以外の場合は、前回入力された演算子を用いて四則演算を実施する
+            makeAns()
+        }
         self.ope = ope
-        makeAns()
         self.num = 0
         self.dot = 0
         self.ans_flag = false
