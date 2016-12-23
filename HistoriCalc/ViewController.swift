@@ -43,6 +43,15 @@ class ViewController: UIViewController {
         default:
             print("NotOperator")
         }
+        //".0"で終わる場合は、Int型に変換して表示
+        if String(calc.ans).hasSuffix(".0") && calc.dot == 0{
+            calcView.text = String(Int(calc.ans))
+        }else{
+            calcView.text = String(calc.ans)
+        }
+        history.searchHistory(year:Int(calc.ans))
+        historyView.text = String(history.year) + "年\n" + history.event
+        historyImage.image = UIImage(named:history.img)
     }
     
     @IBAction func minusButton(_ sender: UIButton) {

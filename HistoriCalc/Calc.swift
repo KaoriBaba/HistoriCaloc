@@ -47,10 +47,7 @@ class Calc {
     
     func makeOpe(ope:String) {
         self.ope = ope
-        //1回目に入力する数字はansの中に格納しておく
-        if self.ans == 0 {
-            self.ans = Double(self.num)
-        }
+        makeAns()
         self.num = 0
         self.dot = 0
         self.ans_flag = false
