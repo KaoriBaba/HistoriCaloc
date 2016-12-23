@@ -29,11 +29,7 @@ class Calc {
         
         //直前に"="が押されていたら"AC"の処理を行う
         if ans_flag == true {
-            self.num = 0
-            self.dot = 0
-            self.ans = 0
-            self.ope = ""
-            self.ans_flag = false
+            makeClear(clr: "AC")
         }
         
         //dotが入力されたら計算を切り替える
@@ -54,9 +50,8 @@ class Calc {
             makeAns()
         }
         self.ope = ope
-        self.num = 0
-        self.dot = 0
         self.ans_flag = false
+        makeClear(clr: "C")
     }
     
     //前回までのansに対して四則演算を実施する
@@ -64,34 +59,31 @@ class Calc {
         switch self.ope {
         case "+":
             self.ans += self.num
-            self.num = 0
-            self.dot = 0
-            self.ans_flag = true
         case "-":
             self.ans -= self.num
-            self.num = 0
-            self.dot = 0
-            self.ans_flag = true
         case "×":
             self.ans *= self.num
-            self.num = 0
-            self.dot = 0
-            self.ans_flag = true
         case "÷":
-            self.ans /= self.num
-            self.num = 0
-            self.dot = 0
-            self.ans_flag = true
+            //0除算された場合はエラー
+            if self.num == 0 {
+                self.ans = Double.nan
+            }else{
+                self.ans /= self.num
+            }
         default:
-            self.ans = self.num
-            self.num = 0
-            self.dot = 0
-            self.ans_flag = true
+            return;
         }
+        self.ans_flag = true
+        makeClear(clr: "C")
     }
     
     func changeMinus(){
-        self.num = self.num * (-1)
+        if num == 0 {
+            self.ans = self.ans * (-1)
+        }else{
+            self.num = self.num * (-1)
+        }
+        self.ans_flag = false
     }
     
     func makeClear(clr:String){

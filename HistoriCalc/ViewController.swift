@@ -43,11 +43,21 @@ class ViewController: UIViewController {
         default:
             print("NotOperator")
         }
-        //".0"で終わる場合は、Int型に変換して表示
-        if String(calc.ans).hasSuffix(".0") && calc.dot == 0{
-            calcView.text = String(Int(calc.ans))
+        //今の状態が"ans"か"num"かを判定
+        if calc.num == 0 {
+            //".0"で終わる場合は、Int型に変換して表示
+            if String(calc.ans).hasSuffix(".0") && calc.dot == 0{
+                calcView.text = String(Int(calc.ans))
+            }else{
+                calcView.text = String(calc.ans)
+            }
         }else{
-            calcView.text = String(calc.ans)
+            //".0"で終わる場合は、Int型に変換して表示
+            if String(calc.num).hasSuffix(".0") && calc.dot == 0{
+                calcView.text = String(Int(calc.num))
+            }else{
+                calcView.text = String(calc.num)
+            }
         }
         history.searchHistory(year:Int(calc.ans))
         historyView.text = String(history.year) + "年\n" + history.event
@@ -56,15 +66,21 @@ class ViewController: UIViewController {
     
     @IBAction func minusButton(_ sender: UIButton) {
         calc.changeMinus()
-        //".0"で終わる場合は、Int型に変換して表示
-        if String(calc.num).hasSuffix(".0") && calc.dot == 0{
-            calcView.text = String(Int(calc.num))
+        //今の状態が"ans"か"num"かを判定
+        if calc.num == 0 {
+            //".0"で終わる場合は、Int型に変換して表示
+            if String(calc.ans).hasSuffix(".0") && calc.dot == 0{
+                calcView.text = String(Int(calc.ans))
+            }else{
+                calcView.text = String(calc.ans)
+            }
         }else{
-        //".0"以降にさらに"0"が続く場合には、"0"を連結させて表示
-            let index:String.CharacterView.Index = String(calc.num).characters.index(of: ".")!
-            let numberOfCharsAfterDot:Int
-                = String(calc.num).distance(from:index, to:String(calc.num).endIndex)
-            calcView.text = String(calc.num) + String(repeating:"0", count:calc.dot - numberOfCharsAfterDot)
+            //".0"で終わる場合は、Int型に変換して表示
+            if String(calc.num).hasSuffix(".0") && calc.dot == 0{
+                calcView.text = String(Int(calc.num))
+            }else{
+                calcView.text = String(calc.num)
+            }
         }
     }
     
@@ -74,8 +90,12 @@ class ViewController: UIViewController {
     
     @IBAction func ansButton(_ sender: UIButton) {
         calc.makeAns()
+        //0で除算された場合はエラー
+        if calc.ans.isNaN {
+            calcView.text = "error"
+            return;
         //".0"で終わる場合は、Int型に変換して表示
-        if String(calc.ans).hasSuffix(".0") && calc.dot == 0{
+        }else if String(calc.ans).hasSuffix(".0") && calc.dot == 0{
             calcView.text = String(Int(calc.ans))
         }else{
             calcView.text = String(calc.ans)
