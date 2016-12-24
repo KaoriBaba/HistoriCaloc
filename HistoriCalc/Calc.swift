@@ -74,6 +74,7 @@ class Calc {
             return;
         }
         self.ans_flag = true
+        self.ope = ""
         makeClear(clr: "C")
     }
     
