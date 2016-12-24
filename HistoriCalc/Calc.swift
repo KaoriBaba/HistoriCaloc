@@ -71,7 +71,13 @@ class Calc {
                 self.ans /= self.num
             }
         default:
-            return;
+            //1つ目の数字が入力された場合は、ansにnumを格納
+            if self.ans == 0 {
+                self.ans = self.num
+            }else{
+            //それ以外の場合は、何もしない
+                return;
+            }
         }
         self.ans_flag = true
         self.ope = ""

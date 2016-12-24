@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A096B681E0E4D1C000FC956 /* AoyagiKouzanTOTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3A096B671E0E4D1C000FC956 /* AoyagiKouzanTOTF.otf */; };
 		3AA6953B1E0546600009E887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA6953A1E0546600009E887 /* AppDelegate.swift */; };
 		3AA6953D1E0546600009E887 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA6953C1E0546600009E887 /* ViewController.swift */; };
 		3AA695401E0546600009E887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA6953E1E0546600009E887 /* Main.storyboard */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A096B671E0E4D1C000FC956 /* AoyagiKouzanTOTF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AoyagiKouzanTOTF.otf; sourceTree = "<group>"; };
+		3A096B691E0E55B9000FC956 /* aoyagireisyosimo_otf_2_01.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = aoyagireisyosimo_otf_2_01.otf; sourceTree = "<group>"; };
 		3AA695371E0546600009E887 /* HistoriCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HistoriCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA6953A1E0546600009E887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AA6953C1E0546600009E887 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +93,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A096B661E0E4D1C000FC956 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				3A096B671E0E4D1C000FC956 /* AoyagiKouzanTOTF.otf */,
+				3A096B691E0E55B9000FC956 /* aoyagireisyosimo_otf_2_01.otf */,
+			);
+			name = font;
+			path = csv/font;
+			sourceTree = "<group>";
+		};
 		3AA6952E1E0546600009E887 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +135,7 @@
 				3AA695411E0546600009E887 /* Assets.xcassets */,
 				3AA695431E0546600009E887 /* LaunchScreen.storyboard */,
 				3AA695461E0546600009E887 /* Info.plist */,
+				3A096B661E0E4D1C000FC956 /* font */,
 				3AA6956E1E067EA30009E887 /* img */,
 				3AA6957E1E07E8C90009E887 /* csv */,
 			);
@@ -273,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AA695451E0546600009E887 /* LaunchScreen.storyboard in Resources */,
+				3A096B681E0E4D1C000FC956 /* AoyagiKouzanTOTF.otf in Resources */,
 				3AA6957D1E07E4F10009E887 /* jesus_christ.png in Resources */,
 				3AA695421E0546600009E887 /* Assets.xcassets in Resources */,
 				3AA695701E067EA30009E887 /* makimono.png in Resources */,
