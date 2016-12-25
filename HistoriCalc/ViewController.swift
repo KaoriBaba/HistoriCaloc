@@ -122,7 +122,7 @@ class ViewController: UIViewController {
         }
         
         history.searchHistory(year:Int(calc.ans))
-        historyView.text = String(history.year) + "年\n" + history.event
+        historyView.text = "西暦" + String(history.year) + "年\n" + history.event
         historyImage.image = UIImage(named:history.img)
     }
     
@@ -141,7 +141,7 @@ class ViewController: UIViewController {
         }
         
         history.searchHistory(year:Int(calc.ans))
-        historyView.text = String(history.year) + "年\n" + history.event
+        historyView.text = "西暦" + String(history.year) + "年\n" + history.event
         historyImage.image = UIImage(named:history.img)
     }
 

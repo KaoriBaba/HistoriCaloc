@@ -27,7 +27,7 @@ class History {
     
     func searchHistory(year:Int){
         
-        for var i in 0 ... 2 {
+        for var i in 0 ... 5 {
             self.historyArray = csvHistoryArray[i].components(separatedBy:",")
             print(Int(historyArray[0])!)
             print(year)
