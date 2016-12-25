@@ -16,8 +16,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var historyView: UILabel!
     @IBOutlet weak var historyImage: UIImageView!
     
+    var sound = SEManager()
+    
     @IBAction func numButton(_ sender: UIButton) {
         calc.makeNum(num:Double(sender.tag))
+        
+        if sender.tag == 0 {
+            sound.sePlay(soundName: "coin06.mp3")
+        }else{
+            sound.sePlay(soundName: "swish1.mp3")
+        }
+            
         //".0"で終わる場合は、Int型に変換して表示
         if String(calc.num).hasSuffix(".0") && calc.dot == 0{
             calcView.text = String(Int(calc.num))
@@ -28,22 +37,28 @@ class ViewController: UIViewController {
                 = String(calc.num).distance(from:index, to:String(calc.num).endIndex)
             calcView.text = String(calc.num) + String(repeating:"0", count:calc.dot - numberOfCharsAfterDot)
         }
+        
     }
 
     @IBAction func opeButton(_ sender: UIButton) {
         switch sender.tag {
         case 11:
             calc.makeOpe(ope:"+")
+            sound.sePlay(soundName: "swing1.mp3")
         case 12:
             calc.makeOpe(ope:"-")
+            sound.sePlay(soundName: "swing2.mp3")
         case 13:
             calc.makeOpe(ope:"×")
+            sound.sePlay(soundName: "swing1.mp3")
         case 14:
             calc.makeOpe(ope:"÷")
+            sound.sePlay(soundName: "coin07.mp3")
         default:
             print("NotOperator")
         }
-        //今の状態が"ans"か"num"かを判定
+        
+        //今の状態が"ans"か"num"かを判定して表示
         if calc.num == 0 {
             //".0"で終わる場合は、Int型に変換して表示
             if String(calc.ans).hasSuffix(".0") && calc.dot == 0{
@@ -59,13 +74,13 @@ class ViewController: UIViewController {
                 calcView.text = String(calc.num)
             }
         }
-        history.searchHistory(year:Int(calc.ans))
-        historyView.text = String(history.year) + "年\n" + history.event
-        historyImage.image = UIImage(named:history.img)
+        
     }
     
     @IBAction func minusButton(_ sender: UIButton) {
         calc.changeMinus()
+        sound.sePlay(soundName: "swing3.mp3")
+        
         //今の状態が"ans"か"num"かを判定
         if calc.num == 0 {
             //".0"で終わる場合は、Int型に変換して表示
@@ -82,14 +97,19 @@ class ViewController: UIViewController {
                 calcView.text = String(calc.num)
             }
         }
+        
     }
     
     @IBAction func dotButton(_ sender: UIButton) {
         calc.dot = 1
+        sound.sePlay(soundName: "knife.mp3")
+        calcView.text = String(Int(calc.num)) + "."
     }
     
     @IBAction func ansButton(_ sender: UIButton) {
         calc.makeAns()
+        sound.sePlay(soundName: "shuriken_ninja_knifes1.mp3")
+        
         //0で除算された場合はエラー
         if calc.ans.isNaN {
             calcView.text = "error"
@@ -100,6 +120,7 @@ class ViewController: UIViewController {
         }else{
             calcView.text = String(calc.ans)
         }
+        
         history.searchHistory(year:Int(calc.ans))
         historyView.text = String(history.year) + "年\n" + history.event
         historyImage.image = UIImage(named:history.img)
@@ -107,14 +128,18 @@ class ViewController: UIViewController {
     
     @IBAction func clearButton(_ sender: UIButton) {
         calcView.text = "0"
+        
         switch sender.tag {
         case 16:
             calc.makeClear(clr:"C")
+            sound.sePlay(soundName: "pyo1.mp3")
         case 17:
             calc.makeClear(clr:"AC")
+            sound.sePlay(soundName: "bomb.mp3")
         default:
             print("NotClear")
         }
+        
         history.searchHistory(year:Int(calc.ans))
         historyView.text = String(history.year) + "年\n" + history.event
         historyImage.image = UIImage(named:history.img)

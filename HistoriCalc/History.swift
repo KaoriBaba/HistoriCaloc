@@ -38,7 +38,7 @@ class History {
                 break
             }else{
                 self.year = year
-                self.event = "何にもなかったよ！"
+                self.event = "何にもなかったよ!"
                 self.img = ""
             }
         }

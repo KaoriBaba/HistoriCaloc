@@ -26,8 +26,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="oshiro3.png" translatesAutoresizingMaskIntoConstraints="NO" id="laI-yk-ipN">
+                                <rect key="frame" x="-97" y="-21" width="571" height="696"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.84464746713638306" green="0.92532557249069214" blue="0.95477384328842163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUh-s8-UxH">
-                                <rect key="frame" x="22" y="60" width="331" height="47"/>
+                                <rect key="frame" x="58" y="80" width="260" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
@@ -35,98 +40,106 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ls9-wT-bdg">
-                                <rect key="frame" x="35" y="359" width="30" height="41"/>
+                                <rect key="frame" x="20" y="367" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
-                                <state key="normal" title="1">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="1" backgroundImage="ninja_black_ura2.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="ninja_black.png"/>
                                 <connections>
                                     <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kio-EY-E6N"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIE-lo-gpk">
-                                <rect key="frame" x="35" y="294" width="30" height="41"/>
+                                <rect key="frame" x="20" y="294" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
-                                <state key="normal" title="4">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="4" backgroundImage="ninja_black_ura2.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="ninja_black.png"/>
                                 <connections>
                                     <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VVZ-vI-zR2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAa-mz-cFi">
-                                <rect key="frame" x="35" y="225" width="30" height="41"/>
+                                <rect key="frame" x="20" y="225" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
-                                <state key="normal" title="7">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="7" backgroundImage="ninja_black_ura2.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="ninja_black.png"/>
                                 <connections>
                                     <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fju-7m-EZ6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vj9-cd-h4j">
-                                <rect key="frame" x="125" y="294" width="30" height="41"/>
+                                <rect key="frame" x="110" y="294" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
-                                <state key="normal" title="5">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="5" backgroundImage="ninja_black_ura2.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="ninja_black.png"/>
                                 <connections>
                                     <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ak1-MT-MpS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJT-sr-JPE">
-                                <rect key="frame" x="125" y="225" width="30" height="41"/>
+                                <rect key="frame" x="110" y="225" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
-                                <state key="normal" title="8">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="8" backgroundImage="ninja_black_ura2.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="ninja_black.png"/>
                                 <connections>
                                     <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="efx-WN-vca"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLT-r7-kIM">
-                                <rect key="frame" x="217" y="294" width="30" height="41"/>
+                                <rect key="frame" x="202" y="294" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
-                                <state key="normal" title="6">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="6" backgroundImage="ninja_black_ura2.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="ninja_black.png"/>
                                 <connections>
                                     <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fGz-g9-Xv9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKp-5B-MDK">
-                                <rect key="frame" x="217" y="225" width="30" height="41"/>
+                                <rect key="frame" x="202" y="225" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
-                                <state key="normal" title="9">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="9" backgroundImage="ninja_black_ura2.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="ninja_black.png"/>
                                 <connections>
                                     <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cUb-ot-Rlf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTS-rM-H4H">
-                                <rect key="frame" x="125" y="359" width="30" height="41"/>
+                                <rect key="frame" x="110" y="367" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
-                                <state key="normal" title="2">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="2" backgroundImage="ninja_black_ura2.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="ninja_black.png"/>
                                 <connections>
                                     <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qLN-Kt-WXg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jju-71-Ir5">
-                                <rect key="frame" x="125" y="424" width="30" height="41"/>
+                                <rect key="frame" x="129" y="456" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
-                                <state key="normal" title=".">
+                                <state key="normal" backgroundImage="makibishi.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -134,43 +147,33 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoL-CW-fgf">
-                                <rect key="frame" x="217" y="359" width="30" height="41"/>
+                                <rect key="frame" x="202" y="367" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
-                                <state key="normal" title="3">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="3" backgroundImage="ninja_black_ura2.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="ninja_black.png"/>
                                 <connections>
                                     <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aj3-73-w3p"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwk-T1-eUU">
-                                <rect key="frame" x="310" y="359" width="30" height="41"/>
+                                <rect key="frame" x="299" y="372" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
-                                <state key="normal" title="+">
+                                <state key="normal" backgroundImage="plus.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="opeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xTz-hX-AR1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNJ-tU-iXC">
-                                <rect key="frame" x="310" y="294" width="30" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
-                                <state key="normal" title="-">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="opeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7HB-Ub-Yzg"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XN-sU-DnL">
-                                <rect key="frame" x="310" y="225" width="30" height="41"/>
+                                <rect key="frame" x="294" y="225" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
-                                <state key="normal" title="×">
+                                <state key="normal" backgroundImage="kakeru.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -178,10 +181,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0A-Zf-hCY">
-                                <rect key="frame" x="310" y="159" width="30" height="41"/>
+                                <rect key="frame" x="300" y="152" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
-                                <state key="normal" title="÷">
+                                <state key="normal" title="÷" backgroundImage="koban.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -189,43 +192,46 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3it-fN-fIZ">
-                                <rect key="frame" x="34" y="159" width="32" height="41"/>
+                                <rect key="frame" x="15" y="142" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
-                                <state key="normal" title="AC">
+                                <state key="normal" title="AC" backgroundImage="kemuridama2.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="ninja_kumogakure.png"/>
                                 <connections>
                                     <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w9D-v6-sg2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jm3-4r-sW7">
-                                <rect key="frame" x="125" y="159" width="30" height="41"/>
+                                <rect key="frame" x="100" y="137" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
-                                <state key="normal" title="C">
+                                <state key="normal" title="C" backgroundImage="kemuridama.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="ninja_kemuridama.png"/>
                                 <connections>
                                     <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gAT-2Z-fNJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5W-fj-uCJ">
-                                <rect key="frame" x="206" y="159" width="51" height="41"/>
+                                <rect key="frame" x="187" y="142" width="90" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
-                                <state key="normal" title="-/+">
+                                <state key="normal" title="-/+" backgroundImage="tako_ura2.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="tako2.png"/>
                                 <connections>
                                     <action selector="minusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EXX-dh-oBn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GS-ty-sZ7">
-                                <rect key="frame" x="35" y="424" width="30" height="41"/>
+                                <rect key="frame" x="25" y="439" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
-                                <state key="normal" title="0">
+                                <state key="normal" backgroundImage="zero.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -233,10 +239,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TU3-ht-irQ">
-                                <rect key="frame" x="310" y="424" width="30" height="41"/>
+                                <rect key="frame" x="299" y="445" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
-                                <state key="normal" title="=">
+                                <state key="normal" backgroundImage="nihontou.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -244,20 +250,31 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="makimono.png" translatesAutoresizingMaskIntoConstraints="NO" id="OzL-76-fL6">
-                                <rect key="frame" x="19" y="483" width="337" height="184"/>
+                                <rect key="frame" x="11" y="483" width="356" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="何が起こった ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbT-Mf-MTr">
-                                <rect key="frame" x="58" y="531" width="260" height="104"/>
+                                <rect key="frame" x="49" y="531" width="279" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L9y-76-UkZ">
-                                <rect key="frame" x="285" y="590" width="68" height="69"/>
+                                <rect key="frame" x="300" y="601" width="51" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNJ-tU-iXC">
+                                <rect key="frame" x="288" y="292" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="30"/>
+                                <state key="normal" backgroundImage="minus.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="opeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7HB-Ub-Yzg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -273,6 +290,22 @@
         </scene>
     </scenes>
     <resources>
+        <image name="kakeru.png" width="200" height="200"/>
+        <image name="kemuridama.png" width="500" height="500"/>
+        <image name="kemuridama2.png" width="500" height="500"/>
+        <image name="koban.png" width="180" height="180"/>
+        <image name="makibishi.png" width="400" height="366"/>
         <image name="makimono.png" width="800" height="328"/>
+        <image name="minus.png" width="600" height="400"/>
+        <image name="nihontou.png" width="550" height="200"/>
+        <image name="ninja_black.png" width="220" height="250"/>
+        <image name="ninja_black_ura2.png" width="220" height="250"/>
+        <image name="ninja_kemuridama.png" width="400" height="400"/>
+        <image name="ninja_kumogakure.png" width="400" height="400"/>
+        <image name="oshiro3.png" width="545" height="576"/>
+        <image name="plus.png" width="200" height="200"/>
+        <image name="tako2.png" width="470" height="400"/>
+        <image name="tako_ura2.png" width="470" height="400"/>
+        <image name="zero.png" width="180" height="180"/>
     </resources>
 </document>
