@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     @IBAction func numButton(_ sender: UIButton) {
         calc.makeNum(num:Double(sender.tag))
         
+        //ゼロを押した時だけ音を変える
         if sender.tag == 0 {
             sound.sePlay(soundName: "coin06.mp3")
         }else{
@@ -37,7 +38,6 @@ class ViewController: UIViewController {
                 = String(calc.num).distance(from:index, to:String(calc.num).endIndex)
             calcView.text = String(calc.num) + String(repeating:"0", count:calc.dot - numberOfCharsAfterDot)
         }
-        
     }
 
     @IBAction func opeButton(_ sender: UIButton) {
@@ -58,31 +58,23 @@ class ViewController: UIViewController {
             print("NotOperator")
         }
         
-        //今の状態が"ans"か"num"かを判定して表示
-        if calc.num == 0 {
-            //".0"で終わる場合は、Int型に変換して表示
-            if String(calc.ans).hasSuffix(".0") && calc.dot == 0{
-                calcView.text = String(Int(calc.ans))
-            }else{
-                calcView.text = String(calc.ans)
-            }
+        //".0"で終わる場合は、Int型に変換して表示
+        if String(calc.ans).hasSuffix(".0") && calc.dot == 0{
+            calcView.text = String(Int(calc.ans))
         }else{
-            //".0"で終わる場合は、Int型に変換して表示
-            if String(calc.num).hasSuffix(".0") && calc.dot == 0{
-                calcView.text = String(Int(calc.num))
-            }else{
-                calcView.text = String(calc.num)
-            }
+            calcView.text = String(calc.ans)
         }
-        
+        print("num1:" + String(calc.num) + "\n")
+        print("ans1:" + String(calc.ans) + "\n")
+        print("ope1:" + String(calc.button_status) + "\n")
     }
     
     @IBAction func minusButton(_ sender: UIButton) {
         calc.changeMinus()
         sound.sePlay(soundName: "swing3.mp3")
         
-        //今の状態が"ans"か"num"かを判定
-        if calc.num == 0 {
+        //今の状態が"ans"か"num"かを判定して表示
+        if calc.button_status == "ans" {
             //".0"で終わる場合は、Int型に変換して表示
             if String(calc.ans).hasSuffix(".0") && calc.dot == 0{
                 calcView.text = String(Int(calc.ans))
@@ -97,17 +89,24 @@ class ViewController: UIViewController {
                 calcView.text = String(calc.num)
             }
         }
-        
     }
     
     @IBAction func dotButton(_ sender: UIButton) {
         calc.dot = 1
         sound.sePlay(soundName: "knife.mp3")
-        calcView.text = String(Int(calc.num)) + "."
+        
+        //今の状態が"ans"か"num"かを判定して表示
+        if calc.button_status == "ans"{
+            calc.makeClear(clr:"AC")
+            calcView.text = String(Int(calc.ans))
+        }else{
+            calcView.text = String(Int(calc.num)) + "."
+        }
     }
     
     @IBAction func ansButton(_ sender: UIButton) {
         calc.makeAns()
+        calc.button_status = "ans"
         sound.sePlay(soundName: "shuriken_ninja_knifes1.mp3")
         
         //0で除算された場合はエラー
@@ -120,6 +119,10 @@ class ViewController: UIViewController {
         }else{
             calcView.text = String(calc.ans)
         }
+        
+        print("num2:" + String(calc.num) + "\n")
+        print("ans2:" + String(calc.ans) + "\n")
+        print("ope2:" + String(calc.button_status) + "\n")
         
         history.searchHistory(year:Int(calc.ans))
         historyView.text = "西暦" + String(history.year) + "年\n" + history.event

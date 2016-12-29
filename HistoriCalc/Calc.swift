@@ -14,7 +14,7 @@ class Calc {
     var ope:String
     var clr:String
     var dot:Int
-    var ans_flag:Bool //直前に"="が押されたかどうかの判定用
+    var button_status:String //押されたボタンの種類の記録（"num","ope","ans"）
     
     init() {
         self.num = 0
@@ -22,13 +22,12 @@ class Calc {
         self.ope = ""
         self.clr = ""
         self.dot = 0
-        self.ans_flag = false
+        self.button_status = ""
     }
     
     func makeNum(num:Double) {
-        
         //直前に"="が押されていたら"AC"の処理を行う
-        if ans_flag == true {
+        if button_status == "ans" {
             makeClear(clr: "AC")
         }
         
@@ -39,58 +38,60 @@ class Calc {
             self.num = self.num + num * pow(0.1, Double(dot))
             dot += 1
         }
+        
+        button_status = "num"
     }
     
     func makeOpe(ope:String) {
-        //1つ目の数字が入力された場合は、ansにnumを格納
-        if self.ans == 0 {
-            self.ans = self.num
+        if button_status == "ans" {
+            //直前に"="が押されていた場合は、何もしない
         }else{
-        //それ以外の場合は、前回入力された演算子を用いて四則演算を実施する
+            //それ以外の場合は、前回入力された演算子を用いて四則演算を実施する
             makeAns()
         }
         self.ope = ope
-        self.ans_flag = false
         makeClear(clr: "C")
+        button_status = "ope"
     }
     
     //前回までのansに対して四則演算を実施する
     func makeAns() {
-        switch self.ope {
-        case "+":
-            self.ans += self.num
-        case "-":
-            self.ans -= self.num
-        case "×":
-            self.ans *= self.num
-        case "÷":
-            //0除算された場合はエラー
-            if self.num == 0 {
-                self.ans = Double.nan
-            }else{
-                self.ans /= self.num
-            }
-        default:
-            //1つ目の数字が入力された場合は、ansにnumを格納
-            if self.ans == 0 {
-                self.ans = self.num
-            }else{
-            //それ以外の場合は、何もしない
+        
+        //1つ目の数字が入力された後に"="が押された場合は、"ans"に"num"を格納
+        if self.ans == 0 && button_status == "num"{
+            self.ans = self.num
+        //四則演算子入力後に"="が押された場合は、"num"同士で演算を実施
+        }else if self.num == 0 && button_status == "ope" {
+            self.num = self.ans
+            makeAns()
+        }else{
+            switch self.ope {
+            case "+":
+                self.ans += self.num
+            case "-":
+                self.ans -= self.num
+            case "×":
+                self.ans *= self.num
+            case "÷":
+                //0除算された場合はエラー
+                if self.num == 0 {
+                    self.ans = Double.nan
+                }else{
+                    self.ans /= self.num
+                }
+            default:
                 return;
             }
         }
-        self.ans_flag = true
-        self.ope = ""
-        makeClear(clr: "C")
     }
     
     func changeMinus(){
-        if num == 0 {
+        //直前に"="が押されていたら"ans"の処理を行う
+        if button_status == "ans" {
             self.ans = self.ans * (-1)
         }else{
             self.num = self.num * (-1)
         }
-        self.ans_flag = false
     }
     
     func makeClear(clr:String){
@@ -107,7 +108,7 @@ class Calc {
             self.dot = 0
             self.ans = 0
             self.ope = ""
-            self.ans_flag = false
+            button_status = ""
         default:
             print("clr_error")
         }
