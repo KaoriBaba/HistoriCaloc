@@ -64,9 +64,6 @@ class ViewController: UIViewController {
         }else{
             calcView.text = String(calc.ans)
         }
-        print("num1:" + String(calc.num) + "\n")
-        print("ans1:" + String(calc.ans) + "\n")
-        print("ope1:" + String(calc.button_status) + "\n")
     }
     
     @IBAction func minusButton(_ sender: UIButton) {
@@ -119,10 +116,6 @@ class ViewController: UIViewController {
         }else{
             calcView.text = String(calc.ans)
         }
-        
-        print("num2:" + String(calc.num) + "\n")
-        print("ans2:" + String(calc.ans) + "\n")
-        print("ope2:" + String(calc.button_status) + "\n")
         
         history.searchHistory(year:Int(calc.ans))
         historyView.text = "西暦" + String(history.year) + "年\n" + history.event
