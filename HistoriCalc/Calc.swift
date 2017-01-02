@@ -38,8 +38,6 @@ class Calc {
             self.num = self.num + num * pow(0.1, Double(dot))
             dot += 1
         }
-        
-        button_status = "num"
     }
     
     func makeOpe(ope:String) {
@@ -51,7 +49,6 @@ class Calc {
         }
         self.ope = ope
         makeClear(clr: "C")
-        button_status = "ope"
     }
     
     //前回までのansに対して四則演算を実施する
