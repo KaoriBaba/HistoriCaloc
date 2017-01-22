@@ -28,9 +28,14 @@ class ViewController: UIViewController {
         }else{
             sound.sePlay(soundName: "swish1.mp3")
         }
-            
+        
+        
+        //オーバーフローした場合はエラー
+        if calc.num.isNaN {
+            calcView.text = "error"
+            return;
+        }else if String(calc.num).hasSuffix(".0") && calc.dot == 0{
         //".0"で終わる場合は、Int型に変換して表示
-        if String(calc.num).hasSuffix(".0") && calc.dot == 0{
             calcView.text = String(Int(calc.num))
         }else{
         //".0"以降にさらに"0"が続く場合には、"0"を連結させて表示
@@ -60,8 +65,13 @@ class ViewController: UIViewController {
         }
         calc.button_status = "ope"
         
+
+        //0で除算された場合・オーバーフローした場合はエラー
+        if calc.ans.isNaN {
+            calcView.text = "error"
+            return;
+        }else if String(calc.ans).hasSuffix(".0") && calc.dot == 0{
         //".0"で終わる場合は、Int型に変換して表示
-        if String(calc.ans).hasSuffix(".0") && calc.dot == 0{
             calcView.text = String(Int(calc.ans))
         }else{
             calcView.text = String(calc.ans)
@@ -109,7 +119,7 @@ class ViewController: UIViewController {
         
         sound.sePlay(soundName: "shuriken_ninja_knifes1.mp3")
         
-        //0で除算された場合はエラー
+        //0で除算された場合・オーバーフローした場合はエラー
         if calc.ans.isNaN {
             calcView.text = "error"
             return;

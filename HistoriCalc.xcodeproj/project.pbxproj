@@ -35,9 +35,24 @@
 		3A096BBB1E0FA646000FC956 /* swing3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3A096BB01E0FA646000FC956 /* swing3.mp3 */; };
 		3A096BBC1E0FA646000FC956 /* swish1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3A096BB11E0FA646000FC956 /* swish1.mp3 */; };
 		3A096BC01E0FC19F000FC956 /* coin06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3A096BBF1E0FC19F000FC956 /* coin06.mp3 */; };
-		3A096BC51E0FC3ED000FC956 /* jesus_christ.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A096BC21E0FC3ED000FC956 /* jesus_christ.png */; };
-		3A096BC61E0FC3ED000FC956 /* mitamotono_yoritomo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A096BC31E0FC3ED000FC956 /* mitamotono_yoritomo.png */; };
-		3A096BC71E0FC3ED000FC956 /* onono_komachi.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A096BC41E0FC3ED000FC956 /* onono_komachi.png */; };
+		3A75D4EB1E34458D00EED719 /* toyotomi_hideyoshi.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A75D4D91E34458D00EED719 /* toyotomi_hideyoshi.png */; };
+		3A75D4EC1E34458D00EED719 /* tokugawa_ieyasu.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A75D4DA1E34458D00EED719 /* tokugawa_ieyasu.png */; };
+		3A75D4ED1E34458D00EED719 /* syoutoku_taishi.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A75D4DB1E34458D00EED719 /* syoutoku_taishi.png */; };
+		3A75D4EE1E34458D00EED719 /* perry.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A75D4DC1E34458D00EED719 /* perry.png */; };
+		3A75D4EF1E34458D00EED719 /* onono_komachi.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A75D4DD1E34458D00EED719 /* onono_komachi.png */; };
+		3A75D4F01E34458D00EED719 /* onono_imoko.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A75D4DE1E34458D00EED719 /* onono_imoko.png */; };
+		3A75D4F11E34458D00EED719 /* oda_nobunaga.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A75D4DF1E34458D00EED719 /* oda_nobunaga.png */; };
+		3A75D4F21E34458D00EED719 /* nigaoe_zabieru_xavier.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A75D4E01E34458D00EED719 /* nigaoe_zabieru_xavier.png */; };
+		3A75D4F31E34458D00EED719 /* nigaoe_saigoutakamori.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A75D4E11E34458D00EED719 /* nigaoe_saigoutakamori.png */; };
+		3A75D4F41E34458D00EED719 /* money_wadoukaichin_wadoukaihou.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A75D4E21E34458D00EED719 /* money_wadoukaichin_wadoukaihou.png */; };
+		3A75D4F51E34458D00EED719 /* mitamotono_yoritomo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A75D4E31E34458D00EED719 /* mitamotono_yoritomo.png */; };
+		3A75D4F61E34458D00EED719 /* landmark_honnouji_fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A75D4E41E34458D00EED719 /* landmark_honnouji_fire.png */; };
+		3A75D4F71E34458D00EED719 /* jujika.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A75D4E51E34458D00EED719 /* jujika.png */; };
+		3A75D4F81E34458D00EED719 /* jesus_christ.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A75D4E61E34458D00EED719 /* jesus_christ.png */; };
+		3A75D4F91E34458D00EED719 /* hinawaju.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A75D4E71E34458D00EED719 /* hinawaju.png */; };
+		3A75D4FA1E34458D00EED719 /* himiko.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A75D4E81E34458D00EED719 /* himiko.png */; };
+		3A75D4FB1E34458D00EED719 /* haniwa.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A75D4E91E34458D00EED719 /* haniwa.png */; };
+		3A75D4FC1E34458D00EED719 /* daibutsu.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A75D4EA1E34458D00EED719 /* daibutsu.png */; };
 		3AA6953B1E0546600009E887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA6953A1E0546600009E887 /* AppDelegate.swift */; };
 		3AA6953D1E0546600009E887 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA6953C1E0546600009E887 /* ViewController.swift */; };
 		3AA695401E0546600009E887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA6953E1E0546600009E887 /* Main.storyboard */; };
@@ -99,9 +114,24 @@
 		3A096BB01E0FA646000FC956 /* swing3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swing3.mp3; sourceTree = "<group>"; };
 		3A096BB11E0FA646000FC956 /* swish1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swish1.mp3; sourceTree = "<group>"; };
 		3A096BBF1E0FC19F000FC956 /* coin06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coin06.mp3; sourceTree = "<group>"; };
-		3A096BC21E0FC3ED000FC956 /* jesus_christ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jesus_christ.png; sourceTree = "<group>"; };
-		3A096BC31E0FC3ED000FC956 /* mitamotono_yoritomo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mitamotono_yoritomo.png; sourceTree = "<group>"; };
-		3A096BC41E0FC3ED000FC956 /* onono_komachi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onono_komachi.png; sourceTree = "<group>"; };
+		3A75D4D91E34458D00EED719 /* toyotomi_hideyoshi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toyotomi_hideyoshi.png; sourceTree = "<group>"; };
+		3A75D4DA1E34458D00EED719 /* tokugawa_ieyasu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tokugawa_ieyasu.png; sourceTree = "<group>"; };
+		3A75D4DB1E34458D00EED719 /* syoutoku_taishi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syoutoku_taishi.png; sourceTree = "<group>"; };
+		3A75D4DC1E34458D00EED719 /* perry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perry.png; sourceTree = "<group>"; };
+		3A75D4DD1E34458D00EED719 /* onono_komachi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onono_komachi.png; sourceTree = "<group>"; };
+		3A75D4DE1E34458D00EED719 /* onono_imoko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onono_imoko.png; sourceTree = "<group>"; };
+		3A75D4DF1E34458D00EED719 /* oda_nobunaga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oda_nobunaga.png; sourceTree = "<group>"; };
+		3A75D4E01E34458D00EED719 /* nigaoe_zabieru_xavier.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nigaoe_zabieru_xavier.png; sourceTree = "<group>"; };
+		3A75D4E11E34458D00EED719 /* nigaoe_saigoutakamori.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nigaoe_saigoutakamori.png; sourceTree = "<group>"; };
+		3A75D4E21E34458D00EED719 /* money_wadoukaichin_wadoukaihou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money_wadoukaichin_wadoukaihou.png; sourceTree = "<group>"; };
+		3A75D4E31E34458D00EED719 /* mitamotono_yoritomo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mitamotono_yoritomo.png; sourceTree = "<group>"; };
+		3A75D4E41E34458D00EED719 /* landmark_honnouji_fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landmark_honnouji_fire.png; sourceTree = "<group>"; };
+		3A75D4E51E34458D00EED719 /* jujika.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jujika.png; sourceTree = "<group>"; };
+		3A75D4E61E34458D00EED719 /* jesus_christ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jesus_christ.png; sourceTree = "<group>"; };
+		3A75D4E71E34458D00EED719 /* hinawaju.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hinawaju.png; sourceTree = "<group>"; };
+		3A75D4E81E34458D00EED719 /* himiko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = himiko.png; sourceTree = "<group>"; };
+		3A75D4E91E34458D00EED719 /* haniwa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haniwa.png; sourceTree = "<group>"; };
+		3A75D4EA1E34458D00EED719 /* daibutsu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daibutsu.png; sourceTree = "<group>"; };
 		3AA695371E0546600009E887 /* HistoriCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HistoriCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA6953A1E0546600009E887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AA6953C1E0546600009E887 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -177,9 +207,24 @@
 		3A096BC11E0FC3ED000FC956 /* history_img */ = {
 			isa = PBXGroup;
 			children = (
-				3A096BC21E0FC3ED000FC956 /* jesus_christ.png */,
-				3A096BC31E0FC3ED000FC956 /* mitamotono_yoritomo.png */,
-				3A096BC41E0FC3ED000FC956 /* onono_komachi.png */,
+				3A75D4D91E34458D00EED719 /* toyotomi_hideyoshi.png */,
+				3A75D4DA1E34458D00EED719 /* tokugawa_ieyasu.png */,
+				3A75D4DB1E34458D00EED719 /* syoutoku_taishi.png */,
+				3A75D4DC1E34458D00EED719 /* perry.png */,
+				3A75D4DD1E34458D00EED719 /* onono_komachi.png */,
+				3A75D4DE1E34458D00EED719 /* onono_imoko.png */,
+				3A75D4DF1E34458D00EED719 /* oda_nobunaga.png */,
+				3A75D4E01E34458D00EED719 /* nigaoe_zabieru_xavier.png */,
+				3A75D4E11E34458D00EED719 /* nigaoe_saigoutakamori.png */,
+				3A75D4E21E34458D00EED719 /* money_wadoukaichin_wadoukaihou.png */,
+				3A75D4E31E34458D00EED719 /* mitamotono_yoritomo.png */,
+				3A75D4E41E34458D00EED719 /* landmark_honnouji_fire.png */,
+				3A75D4E51E34458D00EED719 /* jujika.png */,
+				3A75D4E61E34458D00EED719 /* jesus_christ.png */,
+				3A75D4E71E34458D00EED719 /* hinawaju.png */,
+				3A75D4E81E34458D00EED719 /* himiko.png */,
+				3A75D4E91E34458D00EED719 /* haniwa.png */,
+				3A75D4EA1E34458D00EED719 /* daibutsu.png */,
 			);
 			path = history_img;
 			sourceTree = "<group>";
@@ -388,6 +433,7 @@
 			files = (
 				3A096BB31E0FA646000FC956 /* coin07.mp3 in Resources */,
 				3A096B7B1E0EBE96000FC956 /* kakeru.png in Resources */,
+				3A75D4F31E34458D00EED719 /* nigaoe_saigoutakamori.png in Resources */,
 				3AA695451E0546600009E887 /* LaunchScreen.storyboard in Resources */,
 				3A096B681E0E4D1C000FC956 /* AoyagiKouzanTOTF.otf in Resources */,
 				3A096B961E0F7CFC000FC956 /* ninja_kemuridama.png in Resources */,
@@ -395,32 +441,46 @@
 				3A096BB21E0FA646000FC956 /* bomb.mp3 in Resources */,
 				3A096BB71E0FA646000FC956 /* shuriken_ninja_knifes1.mp3 in Resources */,
 				3A096B9D1E0F8672000FC956 /* tako_ura2.png in Resources */,
+				3A75D4F21E34458D00EED719 /* nigaoe_zabieru_xavier.png in Resources */,
+				3A75D4FA1E34458D00EED719 /* himiko.png in Resources */,
+				3A75D4F71E34458D00EED719 /* jujika.png in Resources */,
 				3A096BBA1E0FA646000FC956 /* swing2.mp3 in Resources */,
 				3A096B751E0EB29D000FC956 /* ninja_black_ura2.png in Resources */,
 				3A096BB61E0FA646000FC956 /* pyo1.mp3 in Resources */,
-				3A096BC71E0FC3ED000FC956 /* onono_komachi.png in Resources */,
+				3A75D4FC1E34458D00EED719 /* daibutsu.png in Resources */,
+				3A75D4F41E34458D00EED719 /* money_wadoukaichin_wadoukaihou.png in Resources */,
 				3A096B8F1E0F7B73000FC956 /* makibishi.png in Resources */,
+				3A75D4F91E34458D00EED719 /* hinawaju.png in Resources */,
 				3A096B811E0EC707000FC956 /* koban.png in Resources */,
 				3A096B931E0F7C17000FC956 /* kemuridama2.png in Resources */,
 				3A096B851E0EC9C2000FC956 /* minus.png in Resources */,
+				3A75D4EE1E34458D00EED719 /* perry.png in Resources */,
 				3A096B971E0F7CFC000FC956 /* ninja_kumogakure.png in Resources */,
-				3A096BC51E0FC3ED000FC956 /* jesus_christ.png in Resources */,
 				3A096B8D1E0EDA85000FC956 /* nihontou.png in Resources */,
 				3A096BB91E0FA646000FC956 /* swing1.mp3 in Resources */,
 				3AA695421E0546600009E887 /* Assets.xcassets in Resources */,
 				3A096BBC1E0FA646000FC956 /* swish1.mp3 in Resources */,
 				3A096BB41E0FA646000FC956 /* knife.mp3 in Resources */,
+				3A75D4ED1E34458D00EED719 /* syoutoku_taishi.png in Resources */,
 				3A096BBB1E0FA646000FC956 /* swing3.mp3 in Resources */,
+				3A75D4F61E34458D00EED719 /* landmark_honnouji_fire.png in Resources */,
+				3A75D4EC1E34458D00EED719 /* tokugawa_ieyasu.png in Resources */,
 				3A096B9F1E0F8771000FC956 /* tako2.png in Resources */,
 				3AA695701E067EA30009E887 /* makimono.png in Resources */,
-				3A096BC61E0FC3ED000FC956 /* mitamotono_yoritomo.png in Resources */,
+				3A75D4F01E34458D00EED719 /* onono_imoko.png in Resources */,
 				3AA695401E0546600009E887 /* Main.storyboard in Resources */,
+				3A75D4EF1E34458D00EED719 /* onono_komachi.png in Resources */,
 				3A096B7F1E0EC2DC000FC956 /* zero.png in Resources */,
+				3A75D4F51E34458D00EED719 /* mitamotono_yoritomo.png in Resources */,
 				3A096B921E0F7C17000FC956 /* kemuridama.png in Resources */,
+				3A75D4F81E34458D00EED719 /* jesus_christ.png in Resources */,
 				3A096B791E0EBCFC000FC956 /* plus.png in Resources */,
 				3A096B741E0EB29D000FC956 /* ninja_black.png in Resources */,
 				3AA695801E07E8C90009E887 /* history.csv in Resources */,
+				3A75D4EB1E34458D00EED719 /* toyotomi_hideyoshi.png in Resources */,
+				3A75D4FB1E34458D00EED719 /* haniwa.png in Resources */,
 				3A096BC01E0FC19F000FC956 /* coin06.mp3 in Resources */,
+				3A75D4F11E34458D00EED719 /* oda_nobunaga.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,8 +31,11 @@ class Calc {
             makeClear(clr: "AC")
         }
         
+        //オーバーフロー時の処理
+        if self.num > 10000000000000 || self.num < -10000000000000{
+            self.num = Double.nan
         //dotが入力されたら計算を切り替える
-        if dot == 0 {
+        }else if dot == 0 {
             self.num = self.num * 10 + num
         }else{
             self.num = self.num + num * pow(0.1, Double(dot))
@@ -53,15 +56,14 @@ class Calc {
     
     //前回までのansに対して四則演算を実施する
     func makeAns() {
-        
         //1つ目の数字が入力された後に"="が押された場合は、"ans"に"num"を格納
         if self.ans == 0 && button_status == "num"{
             self.ans = self.num
-        //四則演算子入力後に"="が押された場合は、"num"同士で演算を実施
-        }else if self.num == 0 && button_status == "ope" {
-            self.num = self.ans
-            makeAns()
         }else{
+            //四則演算子入力後に"="が押された場合は、"num"同士で演算を実施
+            if self.num == 0 && button_status == "ope" {
+                self.num = self.ans
+            }
             switch self.ope {
             case "+":
                 self.ans += self.num
@@ -76,8 +78,11 @@ class Calc {
                 }else{
                     self.ans /= self.num
                 }
-            default:
-                return;
+            default: break
+            }
+            //オーバーフロー時の処理
+            if self.ans > 10000000000000 || self.ans < -10000000000000{
+                self.ans = Double.nan
             }
         }
     }
